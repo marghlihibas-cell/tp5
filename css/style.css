@@ -1,0 +1,200 @@
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+position: center;
+margin:0 auto;
+padding :15px 20px;}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333;
+    background-color: #f9fbfd;
+    padding-top: 80px; 
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px; 
+}
+
+nav a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #0077b6;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: #0077b6;
+}
+
+header img, .logo {
+    max-width: 40px;
+    height: auto;
+    border-radius: 50%;
+}
+
+
+#hero {
+    background: linear-gradient(rgba(0, 119, 182, 0.85), rgba(0, 119, 182, 0.85)), url('banner-sante.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 20px;
+    margin-bottom: 40px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px auto; 
+    line-height: 1.6;
+}
+
+.lien-decouvrir {
+    background-color: #0077b6;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 12px 25px;
+    display: inline-block;
+}
+
+.lien-decouvrir:hover {
+    background-color: #0096c7;
+}
+
+#hero h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+
+#services {
+    max-width: 1100px;
+    margin: 0 auto 40px auto; 
+    padding: 0 20px;
+}
+
+#services-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap:20px;
+}
+.service-card {
+    flex: 1 1 calc(33.333% - 20px); 
+    min-width: 280px; 
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #ffffff;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+#services h2 {
+    text-align: center;
+    color: #0077b6;
+    margin-bottom: 30px;
+}
+
+
+.service-card h3 {
+    color: #0077b6;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    line-height: 1.5;
+    color: #666666;
+}
+
+
+#planning {
+    max-width: 1100px;
+    margin: 0 auto 40px auto;
+    padding: 0 20px;
+}
+
+
+#planning h2 {
+    text-align: center;
+    color: #0077b6;
+    margin-bottom: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden}
+
+
+caption {
+    font-weight: bold;
+    color: #555555;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+thead th {
+    background-color: #0077b6;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+
+tbody tr:nth-child(even) {
+    background-color: #f9fbfd;
+}
+
+tbody tr:hover {
+    background-color: #e6f2ff;
+}
+
+
+tfoot td {
+    font-style: italic;
+    color: #777777;
+    background-color: #f9fbfd;
+    text-align: center;
+}
